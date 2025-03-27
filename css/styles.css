@@ -12,17 +12,28 @@ h2.title {
     font-weight: bold;
     font-style: italic;
 }
+
 #recipes {
     color: blue;
     font-weight: bolder;
     font-style: normal;
 }
+
 li {
     display: inline;
+    padding: 5px;
+    margin: 2px;
+
 }
+
 nav {
     background-color: burlywood;
     width: 400px;
     padding: 2px;
     margin: 20px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
 }
