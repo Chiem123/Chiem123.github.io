@@ -2,11 +2,14 @@
 
 <html>
     <head>
+      <!--  <link id="css" rel="stylesheet" href="./css/styles.css"> -->
         <link rel="stylesheet" href="./css/styles.css">
+     <!--   <script src="./script/script.js"></script> -->
         <title> 
             Lab 1 
         </title>
     </head>
+
         <!--Navigation Bar-->
         <nav>
             <a href="index.html">Home</a>
@@ -16,17 +19,16 @@
             <a href="Contact.html">Contact me</a>
         </nav>
     <body>
+
     <!--Header Section-->
     <header>
-        <Center>
             <h1 class="title">Study & Life in Canada</h1>
-        </Center>
-        <p>Canada is a beautiful country known for its high-quality education and diverse culture. Whether you're planning to study or live in Canada, it's important to know what to expect and how to prepare. This blog will guide you through some essential information about studying and living in Canada.</p>
     </header>
 
     <!--Main container for the blog-->
-<div>
-     <h2 id="education">Education System in Canada</h2>
+<div class="main-content">
+    <p>Canada is a beautiful country known for its high-quality education and diverse culture. Whether you're planning to study or live in Canada, it's important to know what to expect and how to prepare. This blog will guide you through some essential information about studying and living in Canada.</p>
+    <h2 id="education">Education System in Canada</h2>
      <p>The education system in Canada is <span>one of the best in the world</span>. Universities and colleges offer a variety of programs in different fields, ensuring that every student finds a suitable course.</p>
      <h3 id="recipes">Types of Educational Institutions</h3>
      <ul> 
@@ -39,7 +41,7 @@
      <p>The cost of living can vary depending on the city. <span>Here's an average breakdown:</span></p>
 
         <!-- Section with table-->
-            <table border="2px">
+            <table>
                 <tr>
                     <th>City</th>
                     <th>Average Rent (per month)</th>
@@ -67,21 +69,52 @@
              <p>Canada is famous for its stunning natural landscapes. From the Rocky Mountains to the beautiful lakes, there's so much to explore!</p>
              <center>
                 <img src="mountain-4331689_1280.jpg" alt="Beautiful mountains in Canada" width="600">
-                <p>&copy; pixabay</p> 
+                <p class="image-credit">&copy; Pixabay</p> 
              </center>
+
+            <!--Steps Section with Flexbox-->
              <h3 id="steps">Steps to Study in Canada</h3>
              <p>Follow these steps to prepare for studying in Canada:</p>
-             <ol>
-               <li>Research different universities and programs. If you're considering studying in Calgary, <a href="https://www.sait.ca/" target="_blank" alt="SAIT University">SAIT</a> is a great institution to explore.</li> 
-               <li>Check admission requirements and deadlines.</li>
-               <li>Prepare necessary documents (transcripts, English proficiency test, etc.).</li>
-               <li>Apply for a student visa and study permit.</li>
-               <li>Find accommodation and prepare for living expenses.</li>
-               <li>Travel to Canada and attend orientation sessions.</li>
-             </ol>
+             <div class="flexbox-element">
+                <div class="border-box">1. Research different universities and programs. If you're considering studying in Calgary, <a href="https://www.sait.ca/" target="_blank" alt="SAIT University">SAIT</a> is a great institution to explore.</div> 
+                <div class="border-box">2. Check admission requirements and deadlines.</div>
+                <div class="border-box">3. Prepare necessary documents (transcripts, English proficiency test, etc.).</div>
+                <div class="border-box">4. Apply for a student visa and study permit.</div>
+                <div class="border-box">5. Find accommodation and prepare for living expenses.</div>
+                <div class="border-box">6. Travel to Canada and attend orientation sessions.</div>
+             </div>
+            
+             <section class="main-content">
+                <h3>Highlights for International Students</h3>
+
+                <!-- FLOAT + CLEARFIX -->
+                <div class="clearfix tips-container">
+                    <div class="float-example border-box tip-card">
+                      <h4>🎓 Quick Tip</h4>
+                      <p>Start your research early and prepare your documents in advance. It'll help you meet deadlines with ease!</p>
+                    </div>
+                    <div class="float-example border-box tip-card">
+                      <h4>🌍 Fun Fact</h4>
+                      <p>Canada is the second-largest country in the world and offers unique regional cultures and landscapes.</p>
+                    </div>
+                  </div>
+             </section>
+
              <h3>Learn More About Canada</h3>
-             <p>If you're interested in learning more about studying or living in Canada, click here <a href="Contact.html">to contact me</a> for more details.</p>
-</div>
+             <p class="margin-example">If you're interested in learning more about studying or living in Canada, click here <a href="Contact.html"> to contact me</a> for more details.</p>
+
+             <!-- Section for Lab 3 -->
+               <!-- <button onclick="changeTheme()">Change theme</button> -->
+               <!-- <button onclick="showMessage()">Click here<a href="Contact.html"></a></button> -->
+               <!-- <button onclick="checkAge()">Enter the party</button> -->
+               <!-- <button onclick="showMany()">Try to close</button> -->
+               <!-- <button onclick="changeColor()">Change color</button> -->
+               <!-- <button onmouseover="hoverfunction()">Hover</button> -->
+            <!-- <img id="catdog" src="mountain-4331689_1280.jpg" width="600"> -->
+            <!-- <button onclick="changeToDog()">Dog</button> -->
+            <!-- <button onclick="changeToCat()">Cat</button> -->
+        </div>
+
             <!-- Footer -->
             <footer>
                 <p>&copy; 2025 P-Huong Le | All Rights Reserved</p>

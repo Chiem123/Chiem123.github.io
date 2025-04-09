@@ -1,39 +1,292 @@
 
-h1 {
+/* Body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header & Title */
+h1.title {
     color: brown;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: larger;
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 20px;
 }
 
-h2.title {
-    color: aqua;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: medium;
-    font-weight: bold;
-    font-style: italic;
-}
-
+/* Subheading using ID selector */
 #recipes {
-    color: blue;
-    font-weight: bolder;
+    color: #0066cc;
+    font-weight: bold;
     font-style: normal;
+    font-size: 1.2em;
 }
 
-li {
-    display: inline;
-    padding: 5px;
-    margin: 2px;
-
-}
-
+/* NAVIGATION BAR */
 nav {
     background-color: burlywood;
-    width: 400px;
-    padding: 2px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+/* Navigation Links */
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: brown;
+}
+
+/* Main Content Spacing */
+.main-content {
+    padding: 0 40px;
+    max-width:  1000px;
+    margin: 0 auto;
+}
+
+/* List Items */
+ul li {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+/* Table Styling */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border:  2px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f0e68c;
+}
+
+td {
+    background-color: #fff;
+}
+
+/* BUTTON */
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: brown;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: darkred;
+    cursor: pointer;
+}
+
+/* Image */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Image Credit */
+.image-credit {
+    text-align: center;
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Flexbox Element */
+.flexbox-element {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+/* Padding & Margin */
+.padding-example {
+    padding: 15px;
+    background-color: #f0f0f0;
+}
+
+.margin-example {
     margin: 20px;
 }
 
-.flex-container {
+/* Float/Clear/Overflow */
+.float-example {
+    float: left;
+    width: 50%;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Typography */
+p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+}
+
+span {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Border */
+.border-box {
+    flex: 1 1 250px;
+    border: 2px solid brown;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #fefefe;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Position */
+.position-example {
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: burlywood;
+    padding: 20px;
+    margin-top: 50px;
+    color: #333;
+    border-top: 2px solid #ccc;
+    font-weight: bold;
+    font-size: 0.95em;
+    border-radius: 0 0 10px 10px;
+}
+
+/* - CONTACT PAGE - */
+.contact-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.contact-container h1 {
+    text-align: center;
+    color: brown;
+    font-size: 2em;
+}
+
+.contact-container p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
     display: flex;
-    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: brown;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: darkred;
+}
+
+.back-button {
+    display: inline-block;
+    margin: 30px auto 0;
+    text-align: center;
+}
+
+.back-button a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: burlywood;
+    color: #333;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.back-button a:hover {
+    background-color: #d4b47c;
+}
+
+/* Tips Section Styling */
+.tips-container {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.tip-card {
+    width: 47%;
+    background-color: #fffef8;
+    border: 1.5px solid #d4b47c;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+    min-height: 120px;
+}
+
+.tip-card h4 {
+    margin-top: 0;
+    color: brown;
+}
+
+@media (max-width: 768px) {
+    .tip-card {
+        width: 100%;
+    }
 }
